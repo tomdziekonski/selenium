@@ -1,5 +1,6 @@
 package POM;
 
+import Base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,7 @@ public class PersonalInfo {
     private By Date = (By.id("personal_txtLicExpDate"));
     private By Flag = (By.id("personal_chkSmokeFlag"));
     private By Nationality = (By.id("personal_cmbNation"));
-    private By Image = (By.xpath("//img[contains(@alt,'Employee Photo')]"));
+    private By Image = (By.id("empPic"));
     private By InputFile = (By.id("photofile"));
 
 

@@ -1,54 +1,30 @@
-import POM.LoginPage;
-import POM.MainPage;
-import POM.PersonalInfo;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-import Utils.*;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import Base.BaseClass;
+import io.qameta.allure.Step;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import java.io.IOException;
 
-public class PersonalInfoTest {
-    private WebDriver tester;
-    private Utilities utils;
-    private LoginPage logIn;
-    private MainPage main;
-    private PersonalInfo info;
-    private WebDriverWait wait;
+public class PersonalInfoTest extends BaseClass {
 
-    @Before
+    @BeforeTest
     public void beforeTest() {
-        WebDriverManager.firefoxdriver().setup();
-        tester = new FirefoxDriver();
-        tester.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        utils = new Utilities(tester);
-        logIn = new LoginPage(tester);
-        main = new MainPage(tester);
-        info = new PersonalInfo(tester);
-        wait = new WebDriverWait(tester, 5);
+        setBrowser();
     }
 
-    @Test
-    public void PersonalInfo() throws InterruptedException, IOException {
-        tester.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
-        tester.manage().window().maximize();
+    @Test (priority = 1, description = "User is logging in")
+    @Step ("Log In to OpenHRM")
+    public void LogIn() throws InterruptedException, IOException {
+        loggingIn();
+    }
 
-        logIn.LogInUsername().click();
-        logIn.LogInUsername().sendKeys("Admin");
-        logIn.LogInPassword().sendKeys("admin123");
-        logIn.LogInPassword().click();
-        utils.screen();
-        logIn.ConfirmLogin().click();
-
+    @Test (priority = 2, description = "User is editing Personal Information")
+    @Step ("Edit Personal Information")
+    public void PersonalInfo() throws IOException, InterruptedException {
         utils.jsExecutor(main.OpenPersonalInfo());
-
-        wait.until(ExpectedConditions.elementToBeClickable(info.getEnableDisablePersonalInfoEditing()));
-
+        wait.until(ExpectedConditions.elementToBeClickable(info.EnableDisablePersonalInfoEditing()));
+        Thread.sleep(2000);
         info.EnableDisablePersonalInfoEditing().click();
         info.FirstName().sendKeys("Tom");
         info.LastName().sendKeys("Tester");
@@ -62,16 +38,17 @@ public class PersonalInfoTest {
         info.SetAvatar().sendKeys("C:\\Users\\dziekonskit\\Desktop\\Java\\tstimg.jpg");
         info.EnableDisablePersonalInfoEditing().click();
         utils.screen();
+    }
+
+    @Test (priority = 3, description = "User is logging out")
+    @Step ("Log Out")
+    public void LogOut(){
         main.AboutandLogout().click();
         main.LogOut().click();
-
     }
 
-    @After
+    @AfterTest
     public void close(){
         tester.close();
-
     }
-
-
 }

@@ -22,6 +22,7 @@ public class MainPage {
 
     private By PersonalInfo = (By.id("menu_pim_viewMyDetails"));
     private By AboutandLogoutButton = (By.id("welcome"));
+    private By BuzzPage = (By.id("menu_buzz_viewBuzz"));
     private By Logout = (By.xpath("//a[contains(.,'Logout')]"));
     private WebElement element;
     private WebDriver driver;
@@ -42,6 +43,12 @@ public class MainPage {
 
     public WebElement LogOut() {
         element = driver.findElement(Logout);
+
+        return element;
+    }
+
+    public WebElement Buzz() {
+        element = driver.findElement(BuzzPage);
 
         return element;
     }
