@@ -9,22 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRM Testing Suite</th></tr>
-<tr><td><a href="#t0">Personal Info Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21 037</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Writing posts Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13 876</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">34 913</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Personal Info Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21 618</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Writing posts Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14 054</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">35 672</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Personal Info Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">PersonalInfoTest</td><td><a href="#m0">LogIn</a></td><td rowspan="1">1625299143883</td><td rowspan="1">5238</td></tr><tr><th colspan="4">Personal Info Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">PersonalInfoTest</td><td><a href="#m1">LogOut</a></td><td rowspan="1">1625299156882</td><td rowspan="1">1033</td></tr><tr class="passedeven"><td><a href="#m2">PersonalInfo</a></td><td rowspan="1">1625299149220</td><td rowspan="1">7657</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Writing posts Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">BuzzTest</td><td><a href="#m3">LogIn</a></td><td rowspan="1">1625299163332</td><td rowspan="1">5399</td></tr><tr class="passedeven"><td><a href="#m4">LogOut</a></td><td rowspan="1">1625299171051</td><td rowspan="1">885</td></tr><tr class="passedeven"><td><a href="#m5">WriteAPost</a></td><td rowspan="1">1625299168734</td><td rowspan="1">2310</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Personal Info Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">PersonalInfoTest</td><td><a href="#m0">ItShouldBePossibleToEditEmployeeInformation</a></td><td rowspan="1">1628262235789</td><td rowspan="1">8450</td></tr><tr class="passedeven"><td><a href="#m1">LogIn</a></td><td rowspan="1">1628262230993</td><td rowspan="1">4668</td></tr><tr class="passedeven"><td><a href="#m2">LogOut</a></td><td rowspan="1">1628262244245</td><td rowspan="1">929</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Writing posts Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">BuzzTest</td><td><a href="#m3">WriteAPost</a></td><td rowspan="1">1628262255701</td><td rowspan="1">2654</td></tr><tr><th colspan="4">Writing posts Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">BuzzTest</td><td><a href="#m4">LogIn</a></td><td rowspan="1">1628262251257</td><td rowspan="1">4442</td></tr><tr class="passedeven"><td><a href="#m5">LogOut</a></td><td rowspan="1">1628262258547</td><td rowspan="1">792</td></tr></tbody>
 </table>
-<h2>Personal Info Test</h2><h3 id="m0">PersonalInfoTest#LogIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	The title is incorrect expected [true] but found [false]
-	at PersonalInfoTest.LogIn(PersonalInfoTest.java:59)
+<h2>Personal Info Test</h2><h3 id="m0">PersonalInfoTest#ItShouldBePossibleToEditEmployeeInformation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">PersonalInfoTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">PersonalInfoTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Writing posts Test</h2><h3 id="m3">BuzzTest#WriteAPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Incorrect welcome message expected [true] but found [false]
+	at BuzzTest.WriteAPost(BuzzTest.java:36)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">PersonalInfoTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">PersonalInfoTest#PersonalInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Writing posts Test</h2><h3 id="m3">BuzzTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">BuzzTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">BuzzTest#WriteAPost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">BuzzTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">BuzzTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

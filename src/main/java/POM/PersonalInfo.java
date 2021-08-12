@@ -1,6 +1,5 @@
 package POM;
 
-import Base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 public class PersonalInfo {
 
     private By EnableDisablePersonalInfoEditing = (By.id("btnSave"));
-    private By FirstName = (By.id("personal_txtEmpFirstName"));
+    private By firstName = (By.id("personal_txtEmpFirstName"));
     private By LastName = (By.id("personal_txtEmpLastName"));
     private By EmployeeID = (By.id("personal_txtEmployeeId"));
     private By MaleGender = (By.id("personal_optGender_1"));
@@ -35,8 +34,8 @@ public class PersonalInfo {
 
     public WebElement FirstName() {
 
-        driver.findElement(FirstName).clear();
-        element = driver.findElement(FirstName);
+        driver.findElement(firstName).clear();
+        element = driver.findElement(firstName);
         return element;
     }
 
@@ -46,6 +45,42 @@ public class PersonalInfo {
 
         return element;
     }
+/////////////////////////////////////////////
+    public WebElement clearTextField(By elementId) {
+        driver.findElement(elementId).clear();
+        element = driver.findElement(elementId);
+        return element;
+    }
+
+    public WebElement clickWebElement(By elementId){
+        element = driver.findElement(elementId);
+        element.click();
+        return element;
+    }
+
+    public WebElement findWebElement(By elementId){
+        element = driver.findElement(elementId);
+        return element;
+    }
+
+    public void EditEmployeeData(String employeeFirstName, String employeeLastName, String employeeIDs, String date, String avatarFileDirectory){
+        clickWebElement(EnableDisablePersonalInfoEditing);
+        clickWebElement(firstName);
+        clearTextField(firstName).sendKeys(employeeFirstName);
+        clickWebElement(LastName);
+        clearTextField(LastName).sendKeys(employeeLastName);
+        clickWebElement(EmployeeID);
+        clearTextField(EmployeeID).sendKeys(employeeIDs);
+        clickWebElement(MaleGender);
+        clickWebElement(Date);
+        clearTextField(Date).sendKeys(date);
+        clickWebElement(EnableDisablePersonalInfoEditing);
+        clickWebElement(Image);
+        findWebElement(InputFile).sendKeys(avatarFileDirectory);
+        clickWebElement(EnableDisablePersonalInfoEditing);
+    }
+////////////////////////////////////////////////////
+
 
     public WebElement EmployeeID() {
         return driver.findElement(EmployeeID);

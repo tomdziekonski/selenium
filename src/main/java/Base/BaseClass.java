@@ -1,9 +1,10 @@
 package Base;
+
 import POM.Buzz;
 import POM.LoginPage;
 import POM.MainPage;
 import POM.PersonalInfo;
-import Utils.Utilities;
+import Utils.Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +13,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,12 +23,14 @@ public class BaseClass {
     public Properties prop = new Properties();
     public WebDriver tester;
     public SoftAssert assertion;
-    public Utilities utils;
+    public Utils utils;
     public Buzz buzz;
     public WebDriverWait wait;
     public LoginPage logIn;
     public MainPage main;
     public PersonalInfo info;
+    public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
+
 
     public void setBrowser(){
         try {
@@ -54,10 +56,11 @@ public class BaseClass {
             wait = new WebDriverWait(tester, 5);
             assertion  = new SoftAssert();
             logIn = new LoginPage(tester);
-            utils = new Utilities(tester);
+            utils = new Utils(tester);
             main = new MainPage(tester);
             info = new PersonalInfo(tester);
             buzz = new Buzz(tester);
+            tdriver.set(tester);
         }
 
         else if (browser.equals("chrome")){
@@ -68,7 +71,7 @@ public class BaseClass {
             wait = new WebDriverWait(tester, 5);
             assertion  = new SoftAssert();
             logIn = new LoginPage(tester);
-            utils = new Utilities(tester);
+            utils = new Utils(tester);
             main = new MainPage(tester);
             info = new PersonalInfo(tester);
             buzz = new Buzz(tester);
@@ -82,7 +85,7 @@ public class BaseClass {
             wait = new WebDriverWait(tester, 5);
             assertion  = new SoftAssert();
             logIn = new LoginPage(tester);
-            utils = new Utilities(tester);
+            utils = new Utils(tester);
             main = new MainPage(tester);
             info = new PersonalInfo(tester);
             buzz = new Buzz(tester);
@@ -96,22 +99,25 @@ public class BaseClass {
             wait = new WebDriverWait(tester, 5);
             assertion  = new SoftAssert();
             logIn = new LoginPage(tester);
-            utils = new Utilities(tester);
+            utils = new Utils(tester);
             main = new MainPage(tester);
             info = new PersonalInfo(tester);
             buzz = new Buzz(tester);
         }
     }
 
-    public void loggingIn() throws IOException {
+    public void loggingIn(String user, String password) throws IOException {
         tester.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
         logIn.LogInUsername().click();
-        logIn.LogInUsername().sendKeys("Admin");
+        logIn.LogInUsername().sendKeys(user);
         logIn.LogInPassword().click();
-        logIn.LogInPassword().sendKeys("admin123");
-        assertion.assertTrue(tester.getTitle().equals("Orange0HRM"), "The title is incorrect");
+        logIn.LogInPassword().sendKeys(password);
         utils.screen();
         logIn.ConfirmLogin().click();
-        assertion.assertAll();
+        //assertion.assertAll();
+    }
+
+    public static synchronized WebDriver getDriver(){
+        return tdriver.get();
     }
 }

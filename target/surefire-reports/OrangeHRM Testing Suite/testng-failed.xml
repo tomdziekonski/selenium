@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [OrangeHRM Testing Suite]">
-  <test thread-count="5" verbose="0" name="Personal Info Test(failed)">
+  <listeners>
+    <listener class-name="Utils.AllureListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Writing posts Test(failed)">
     <classes>
-      <class name="PersonalInfoTest">
+      <class name="BuzzTest">
         <methods>
-          <include name="beforeTest"/>
-          <include name="LogIn"/>
+          <include name="WriteAPost"/>
           <include name="close"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- PersonalInfoTest -->
+      </class> <!-- BuzzTest -->
     </classes>
-  </test> <!-- Personal Info Test(failed) -->
+  </test> <!-- Writing posts Test(failed) -->
 </suite> <!-- Failed suite [OrangeHRM Testing Suite] -->

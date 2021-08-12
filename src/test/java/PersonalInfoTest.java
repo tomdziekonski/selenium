@@ -16,27 +16,17 @@ public class PersonalInfoTest extends BaseClass {
     @Test (priority = 1, description = "User is logging in")
     @Step ("Log In to OpenHRM")
     public void LogIn() throws InterruptedException, IOException {
-        loggingIn();
+        loggingIn("Admin", "admin123");
+        assertion.assertTrue(tester.getTitle().equals("Orange0HRM"), "The title is incorrect");
     }
 
     @Test (priority = 2, description = "User is editing Personal Information")
     @Step ("Edit Personal Information")
-    public void PersonalInfo() throws IOException, InterruptedException {
+    public void ItShouldBePossibleToEditEmployeeInformation() throws IOException, InterruptedException {
         utils.jsExecutor(main.OpenPersonalInfo());
         wait.until(ExpectedConditions.elementToBeClickable(info.EnableDisablePersonalInfoEditing()));
         Thread.sleep(2000);
-        info.EnableDisablePersonalInfoEditing().click();
-        info.FirstName().sendKeys("Tom");
-        info.LastName().sendKeys("Tester");
-        info.EmployeeID().clear();
-        info.EmployeeID().sendKeys("666");
-        info.FemaleGender().click();
-        info.Date().clear();
-        info.Date().sendKeys("2000-11-15");
-        info.EnableDisablePersonalInfoEditing().click();
-        info.Pic().click();
-        info.SetAvatar().sendKeys("C:\\Users\\dziekonskit\\Desktop\\Java\\tstimg.jpg");
-        info.EnableDisablePersonalInfoEditing().click();
+        info.EditEmployeeData("Tom", "Tester", "666", "2000-11-15", "C:\\\\Users\\\\dziekonskit\\\\Desktop\\\\Java\\\\tstimg.jpg");
         utils.screen();
     }
 

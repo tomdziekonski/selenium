@@ -1,6 +1,7 @@
 POM\Buzz.class
 POM\PersonalInfo.class
-Utils\Utilities.class
+POM\LoginPage.class
+Utils\AllureListener.class
+Utils\Utils.class
 Base\BaseClass.class
 POM\MainPage.class
-POM\LoginPage.class

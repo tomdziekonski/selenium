@@ -2,27 +2,55 @@
 <testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRM Testing Suite" duration-ms="34983" started-at="2021-07-03T09:58:57 CEST" finished-at="2021-07-03T09:59:32 CEST">
+  <suite name="OrangeHRM Testing Suite" duration-ms="35706" started-at="2021-08-06T17:03:44 CEST" finished-at="2021-08-06T17:04:20 CEST">
     <groups>
     </groups>
-    <test name="Personal Info Test" duration-ms="21037" started-at="2021-07-03T09:58:57 CEST" finished-at="2021-07-03T09:59:18 CEST">
+    <test name="Personal Info Test" duration-ms="21618" started-at="2021-08-06T17:03:44 CEST" finished-at="2021-08-06T17:04:05 CEST">
       <class name="PersonalInfoTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:PersonalInfoTest@78e117e3]" name="beforeTest" is-config="true" duration-ms="6161" started-at="2021-07-03T09:58:57 CEST" finished-at="2021-07-03T09:59:03 CEST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:PersonalInfoTest@2ea227af]" name="beforeTest" is-config="true" duration-ms="6568" started-at="2021-08-06T17:03:44 CEST" finished-at="2021-08-06T17:03:50 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="LogIn()[pri:1, instance:PersonalInfoTest@78e117e3]" name="LogIn" duration-ms="5238" started-at="2021-07-03T09:59:03 CEST" description="User is logging in" finished-at="2021-07-03T09:59:09 CEST">
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:PersonalInfoTest@2ea227af]" name="LogIn" duration-ms="4668" started-at="2021-08-06T17:03:50 CEST" description="User is logging in" finished-at="2021-08-06T17:03:55 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+        <test-method status="PASS" signature="ItShouldBePossibleToEditEmployeeInformation()[pri:2, instance:PersonalInfoTest@2ea227af]" name="ItShouldBePossibleToEditEmployeeInformation" duration-ms="8450" started-at="2021-08-06T17:03:55 CEST" description="User is editing Personal Information" finished-at="2021-08-06T17:04:04 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItShouldBePossibleToEditEmployeeInformation -->
+        <test-method status="PASS" signature="LogOut()[pri:3, instance:PersonalInfoTest@2ea227af]" name="LogOut" duration-ms="929" started-at="2021-08-06T17:04:04 CEST" description="User is logging out" finished-at="2021-08-06T17:04:05 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method status="PASS" signature="close()[pri:0, instance:PersonalInfoTest@2ea227af]" name="close" is-config="true" duration-ms="817" started-at="2021-08-06T17:04:05 CEST" finished-at="2021-08-06T17:04:05 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- PersonalInfoTest -->
+    </test> <!-- Personal Info Test -->
+    <test name="Writing posts Test" duration-ms="14054" started-at="2021-08-06T17:04:06 CEST" finished-at="2021-08-06T17:04:20 CEST">
+      <class name="BuzzTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:BuzzTest@17046283]" name="beforeTest" is-config="true" duration-ms="5226" started-at="2021-08-06T17:04:06 CEST" finished-at="2021-08-06T17:04:11 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:BuzzTest@17046283]" name="LogIn" duration-ms="4442" started-at="2021-08-06T17:04:11 CEST" description="User is logging in" finished-at="2021-08-06T17:04:15 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+        <test-method status="FAIL" signature="WriteAPost()[pri:2, instance:BuzzTest@17046283]" name="WriteAPost" duration-ms="2654" started-at="2021-08-06T17:04:15 CEST" description="User is writing a post" finished-at="2021-08-06T17:04:18 CEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-The title is incorrect expected [true] but found [false]]]>
+Incorrect welcome message expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-The title is incorrect expected [true] but found [false]
+Incorrect welcome message expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at PersonalInfoTest.LogIn(PersonalInfoTest.java:59)
+at BuzzTest.WriteAPost(BuzzTest.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,40 +88,12 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LogIn -->
-        <test-method status="PASS" signature="PersonalInfo()[pri:2, instance:PersonalInfoTest@78e117e3]" name="PersonalInfo" duration-ms="7657" started-at="2021-07-03T09:59:09 CEST" description="User is editing Personal Information" finished-at="2021-07-03T09:59:16 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PersonalInfo -->
-        <test-method status="PASS" signature="LogOut()[pri:3, instance:PersonalInfoTest@78e117e3]" name="LogOut" duration-ms="1033" started-at="2021-07-03T09:59:16 CEST" description="User is logging out" finished-at="2021-07-03T09:59:17 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogOut -->
-        <test-method status="PASS" signature="close()[pri:0, instance:PersonalInfoTest@78e117e3]" name="close" is-config="true" duration-ms="794" started-at="2021-07-03T09:59:17 CEST" finished-at="2021-07-03T09:59:18 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- PersonalInfoTest -->
-    </test> <!-- Personal Info Test -->
-    <test name="Writing posts Test" duration-ms="13876" started-at="2021-07-03T09:59:18 CEST" finished-at="2021-07-03T09:59:32 CEST">
-      <class name="BuzzTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:BuzzTest@1622f1b]" name="beforeTest" is-config="true" duration-ms="4547" started-at="2021-07-03T09:59:18 CEST" finished-at="2021-07-03T09:59:23 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LogIn()[pri:1, instance:BuzzTest@1622f1b]" name="LogIn" duration-ms="5399" started-at="2021-07-03T09:59:23 CEST" description="User is logging in" finished-at="2021-07-03T09:59:28 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogIn -->
-        <test-method status="PASS" signature="WriteAPost()[pri:2, instance:BuzzTest@1622f1b]" name="WriteAPost" duration-ms="2310" started-at="2021-07-03T09:59:28 CEST" description="User is writing a post" finished-at="2021-07-03T09:59:31 CEST">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- WriteAPost -->
-        <test-method status="PASS" signature="LogOut()[pri:3, instance:BuzzTest@1622f1b]" name="LogOut" duration-ms="885" started-at="2021-07-03T09:59:31 CEST" description="User is logging out" finished-at="2021-07-03T09:59:31 CEST">
+        <test-method status="PASS" signature="LogOut()[pri:3, instance:BuzzTest@17046283]" name="LogOut" duration-ms="792" started-at="2021-08-06T17:04:18 CEST" description="User is logging out" finished-at="2021-08-06T17:04:19 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOut -->
-        <test-method status="PASS" signature="close()[pri:0, instance:BuzzTest@1622f1b]" name="close" is-config="true" duration-ms="721" started-at="2021-07-03T09:59:31 CEST" finished-at="2021-07-03T09:59:32 CEST">
+        <test-method status="PASS" signature="close()[pri:0, instance:BuzzTest@17046283]" name="close" is-config="true" duration-ms="743" started-at="2021-08-06T17:04:19 CEST" finished-at="2021-08-06T17:04:20 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

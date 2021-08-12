@@ -1,31 +1,21 @@
 package POM;
 
-import org.apache.commons.logging.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class MainPage {
 
-    public By getPersonalInfo() {
-        return PersonalInfo;
-    }
-
-    public By getAboutandLogoutButton() {
-        return AboutandLogoutButton;
-    }
-
-    public By getLogout() {
-        return Logout;
-    }
-
 
     private By PersonalInfo = (By.id("menu_pim_viewMyDetails"));
     private By AboutandLogoutButton = (By.id("welcome"));
     private By BuzzPage = (By.id("menu_buzz_viewBuzz"));
     private By Logout = (By.xpath("//a[contains(.,'Logout')]"));
+    private By Maintenance = (By.xpath("//a[text()='Access Records']"));
     private WebElement element;
     private WebDriver driver;
+
+
 
     public MainPage(WebDriver driver) {
     this.driver = driver;
@@ -33,6 +23,11 @@ public class MainPage {
 
     public WebElement OpenPersonalInfo() {
         element = driver.findElement(PersonalInfo);
+        return element;
+    }
+
+    public WebElement OpenMaintenance() {
+        element = driver.findElement(Maintenance);
         return element;
     }
 

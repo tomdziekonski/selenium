@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-OrangeHRM_Testing_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="PersonalInfoTest" hash-for-method="LogIn">LogIn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="BuzzTest" hash-for-method="WriteAPost">WriteAPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-OrangeHRM_Testing_Suite -->
@@ -118,6 +118,16 @@
                     <div class="method-list-content passed suite-OrangeHRM_Testing_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="PersonalInfoTest" hash-for-method="ItShouldBePossibleToEditEmployeeInformation">ItShouldBePossibleToEditEmployeeInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="PersonalInfoTest" hash-for-method="LogIn">LogIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="BuzzTest" hash-for-method="LogIn">LogIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -129,16 +139,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="BuzzTest" hash-for-method="LogOut">LogOut</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="PersonalInfoTest" hash-for-method="PersonalInfo">PersonalInfo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHRM_Testing_Suite" title="BuzzTest" hash-for-method="WriteAPost">WriteAPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OrangeHRM_Testing_Suite -->
@@ -156,22 +156,22 @@
           <div class="suite-OrangeHRM_Testing_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">PersonalInfoTest</span>
+              <span class="class-name">BuzzTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LogIn">
-                  </a> <!-- LogIn -->
-                  <span class="method-name">LogIn</span>
+                  <a name="WriteAPost">
+                  </a> <!-- WriteAPost -->
+                  <span class="method-name">WriteAPost</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	The title is incorrect expected [true] but found [false]
-	at PersonalInfoTest.LogIn(PersonalInfoTest.java:59)
+	Incorrect welcome message expected [true] but found [false]
+	at BuzzTest.WriteAPost(BuzzTest.java:36)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(User is logging in)                  </em>
+(User is writing a post)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,15 +200,6 @@
 (User is logging out)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="WriteAPost">
-                  </a> <!-- WriteAPost -->
-                  <span class="method-name">WriteAPost</span>
-                  <em>
-(User is writing a post)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-OrangeHRM_Testing_Suite-class-passed -->
           <div class="suite-OrangeHRM_Testing_Suite-class-passed">
@@ -219,20 +210,29 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="ItShouldBePossibleToEditEmployeeInformation">
+                  </a> <!-- ItShouldBePossibleToEditEmployeeInformation -->
+                  <span class="method-name">ItShouldBePossibleToEditEmployeeInformation</span>
+                  <em>
+(User is editing Personal Information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogIn">
+                  </a> <!-- LogIn -->
+                  <span class="method-name">LogIn</span>
+                  <em>
+(User is logging in)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="LogOut">
                   </a> <!-- LogOut -->
                   <span class="method-name">LogOut</span>
                   <em>
 (User is logging out)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PersonalInfo">
-                  </a> <!-- PersonalInfo -->
-                  <span class="method-name">PersonalInfo</span>
-                  <em>
-(User is editing Personal Information)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,6 +247,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;OrangeHRM Testing Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Utils.AllureListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Personal Info Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;PersonalInfoTest&quot;/&gt;
@@ -299,34 +302,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PersonalInfo')
+data.setCell(0, 1, 'ItShouldBePossibleToEditEmployeeInformation')
 data.setCell(0, 2, 'PersonalInfoTest')
-data.setCell(0, 3, 7657);
+data.setCell(0, 3, 8450);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LogIn')
-data.setCell(1, 2, 'BuzzTest')
-data.setCell(1, 3, 5399);
+data.setCell(1, 2, 'PersonalInfoTest')
+data.setCell(1, 3, 4668);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LogIn')
-data.setCell(2, 2, 'PersonalInfoTest')
-data.setCell(2, 3, 5238);
+data.setCell(2, 2, 'BuzzTest')
+data.setCell(2, 3, 4442);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'WriteAPost')
 data.setCell(3, 2, 'BuzzTest')
-data.setCell(3, 3, 2310);
+data.setCell(3, 3, 2654);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'LogOut')
 data.setCell(4, 2, 'PersonalInfoTest')
-data.setCell(4, 3, 1033);
+data.setCell(4, 3, 929);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LogOut')
 data.setCell(5, 2, 'BuzzTest')
-data.setCell(5, 3, 885);
+data.setCell(5, 3, 792);
 window.suiteTableData['OrangeHRM_Testing_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-OrangeHRM_Testing_Suite">
               </div> <!-- times-div-OrangeHRM_Testing_Suite -->
             </div> <!-- times-div -->
@@ -358,45 +361,45 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LogIn</span>
-                <span class="method-start">6193 ms</span>
+                <span class="method-start">6605 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">PersonalInfo</span>
-                <span class="method-start">11530 ms</span>
+                <span class="method-name">ItShouldBePossibleToEditEmployeeInformation</span>
+                <span class="method-start">11401 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LogOut</span>
-                <span class="method-start">19192 ms</span>
+                <span class="method-start">19857 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">20229 ms</span>
+                <span class="method-start">20790 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">BuzzTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">21094 ms</span>
+                <span class="method-start">21642 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LogIn</span>
-                <span class="method-start">25642 ms</span>
+                <span class="method-start">26869 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">WriteAPost</span>
-                <span class="method-start">31044 ms</span>
+                <span class="method-start">31313 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LogOut</span>
-                <span class="method-start">33361 ms</span>
+                <span class="method-start">34159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close</span>
-                <span class="method-start">34248 ms</span>
+                <span class="method-start">34953 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

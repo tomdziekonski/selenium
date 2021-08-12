@@ -11,6 +11,7 @@ public class LoginPage {
     private By ConfirmLogin = (By.id("btnLogin"));
     private WebElement element;
     private WebDriver driver;
+
     public LoginPage(WebDriver driver) {
     this.driver = driver;
     }
