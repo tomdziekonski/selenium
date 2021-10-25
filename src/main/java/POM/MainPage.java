@@ -12,10 +12,9 @@ public class MainPage {
     private By BuzzPage = (By.id("menu_buzz_viewBuzz"));
     private By Logout = (By.xpath("//a[contains(.,'Logout')]"));
     private By Maintenance = (By.xpath("//a[text()='Access Records']"));
+    private By HelpButton = (By.xpath("//a[@class='help-icon-div']"));
     private WebElement element;
     private WebDriver driver;
-
-
 
     public MainPage(WebDriver driver) {
     this.driver = driver;
@@ -45,6 +44,11 @@ public class MainPage {
     public WebElement Buzz() {
         element = driver.findElement(BuzzPage);
 
+        return element;
+    }
+
+    public WebElement HelpButton() {
+        element = driver.findElement(HelpButton);
         return element;
     }
 

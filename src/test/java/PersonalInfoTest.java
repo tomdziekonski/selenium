@@ -9,7 +9,7 @@ import java.io.IOException;
 public class PersonalInfoTest extends BaseClass {
 
     @BeforeTest
-    public void beforeTest() {
+    public void beforeTestSetup() {
         setBrowser();
     }
 
@@ -38,7 +38,7 @@ public class PersonalInfoTest extends BaseClass {
     }
 
     @AfterTest
-    public void close(){
+    public void closeTheBrowser(){
         tester.close();
     }
 }

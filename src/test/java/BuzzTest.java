@@ -11,10 +11,9 @@ import java.io.IOException;
 public class BuzzTest extends BaseClass {
 
     @BeforeTest
-    public void beforeTest() {
+    public void beforeTestSetup() {
         setBrowser();
     }
-
 
     @Test(priority = 1, description = "User is logging in")
     @Step("Log In to OpenHRM")
@@ -24,7 +23,7 @@ public class BuzzTest extends BaseClass {
 
     @Test(priority = 2, description = "User is writing a post")
     @Step("Writing a post")
-    public void WriteAPost() throws IOException, InterruptedException {
+    public void itShouldBePossibleToWriteAPost() throws IOException, InterruptedException {
         String element = main.AboutandLogout().getText();
 
         System.out.println(element);
@@ -46,7 +45,7 @@ public class BuzzTest extends BaseClass {
     }
 
     @AfterTest
-    public void close() {
+    public void closeTheBrowser() {
         tester.close();
     }
 }

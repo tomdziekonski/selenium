@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [OrangeHRM Testing Suite]">
   <listeners>
     <listener class-name="Utils.AllureListener"/>
+    <listener class-name="Utils.RetryFailedTestsLogic"/>
   </listeners>
   <test thread-count="5" verbose="0" name="Writing posts Test(failed)">
     <classes>
       <class name="BuzzTest">
         <methods>
-          <include name="WriteAPost"/>
-          <include name="close"/>
-          <include name="beforeTest"/>
+          <include name="LogOut"/>
+          <include name="itShouldBePossibleToWriteAPost"/>
+          <include name="beforeTestSetup"/>
+          <include name="closeTheBrowser"/>
         </methods>
       </class> <!-- BuzzTest -->
     </classes>

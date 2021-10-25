@@ -1,7 +1,14 @@
-POM\Buzz.class
-POM\PersonalInfo.class
-POM\LoginPage.class
+Utils\Log4jLogger.class
+CucumberStepDefinition\LoggingOutTest.class
+Utils\RetryFailedTestsLogic.class
 Utils\AllureListener.class
+POM\HelpPage.class
 Utils\Utils.class
 Base\BaseClass.class
 POM\MainPage.class
+Utils\TestNGRetryLogic.class
+CucumberStepDefinition\ValidCredentialsTest.class
+POM\Buzz.class
+POM\PersonalInfo.class
+POM\LoginPage.class
+CucumberTestRunner\CucumberRunner.class

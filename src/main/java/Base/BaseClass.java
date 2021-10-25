@@ -1,9 +1,6 @@
 package Base;
 
-import POM.Buzz;
-import POM.LoginPage;
-import POM.MainPage;
-import POM.PersonalInfo;
+import POM.*;
 import Utils.Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +26,7 @@ public class BaseClass {
     public LoginPage logIn;
     public MainPage main;
     public PersonalInfo info;
+    public HelpPage help;
     public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
 
 
@@ -60,6 +58,7 @@ public class BaseClass {
             main = new MainPage(tester);
             info = new PersonalInfo(tester);
             buzz = new Buzz(tester);
+            help = new HelpPage(tester);
             tdriver.set(tester);
         }
 

@@ -9,22 +9,80 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRM Testing Suite</th></tr>
-<tr><td><a href="#t0">Personal Info Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21 618</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Writing posts Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14 054</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">35 672</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Personal Info Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22 275</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Writing posts Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">4</td><td class="num attn">1</td><td class="num">18 184</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Empty Credentials Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9 162</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Empty Password Reset Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9 429</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Invalid Credentials Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9 114</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">Retry Listener Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8 685</td><td></td><td></td></tr>
+<tr><td><a href="#t6">Valid Password Reset Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13 952</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t7">Window Handling Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16 463</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">13</th><th class="num">0</th><th class="num attn">4</th><th class="num attn">1</th><th class="num">107 264</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Personal Info Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">PersonalInfoTest</td><td><a href="#m0">ItShouldBePossibleToEditEmployeeInformation</a></td><td rowspan="1">1628262235789</td><td rowspan="1">8450</td></tr><tr class="passedeven"><td><a href="#m1">LogIn</a></td><td rowspan="1">1628262230993</td><td rowspan="1">4668</td></tr><tr class="passedeven"><td><a href="#m2">LogOut</a></td><td rowspan="1">1628262244245</td><td rowspan="1">929</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Writing posts Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">BuzzTest</td><td><a href="#m3">WriteAPost</a></td><td rowspan="1">1628262255701</td><td rowspan="1">2654</td></tr><tr><th colspan="4">Writing posts Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">BuzzTest</td><td><a href="#m4">LogIn</a></td><td rowspan="1">1628262251257</td><td rowspan="1">4442</td></tr><tr class="passedeven"><td><a href="#m5">LogOut</a></td><td rowspan="1">1628262258547</td><td rowspan="1">792</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Testing Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Personal Info Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">PersonalInfoTest</td><td><a href="#m0">ItShouldBePossibleToEditEmployeeInformation</a></td><td rowspan="1">1632414901989</td><td rowspan="1">9235</td></tr><tr class="passedeven"><td><a href="#m1">LogIn</a></td><td rowspan="1">1632414896592</td><td rowspan="1">5267</td></tr><tr class="passedeven"><td><a href="#m2">LogOut</a></td><td rowspan="1">1632414911231</td><td rowspan="1">1070</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Writing posts Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">BuzzTest</td><td><a href="#m3">itShouldBePossibleToWriteAPost</a></td><td rowspan="1">1632414926854</td><td rowspan="1">700</td></tr><tr><th colspan="4">Writing posts Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="4">BuzzTest</td><td><a href="#m4">LogOut</a></td><td rowspan="1">1632414927786</td><td rowspan="1">1616</td></tr><tr class="retriedeven"><td><a href="#m5">itShouldBePossibleToWriteAPost</a></td><td rowspan="3">1632414926070</td><td rowspan="3">775</td></tr><tr class="retriedeven"><td><a href="#m6">itShouldBePossibleToWriteAPost</a></td></tr><tr class="retriedeven"><td><a href="#m7">itShouldBePossibleToWriteAPost</a></td></tr><tr><th colspan="4">Writing posts Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">BuzzTest</td><td><a href="#m8">LogIn</a></td><td rowspan="1">1632414918038</td><td rowspan="1">4854</td></tr><tr class="passedeven"><td><a href="#m9">LogOut</a></td><td rowspan="1">1632414929409</td><td rowspan="1">853</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Empty Credentials Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">EmptyCredentialsTest</td><td><a href="#m10">itShouldNotBePossibleToLogInWithEmptyUserCredentials</a></td><td rowspan="1">1632414936304</td><td rowspan="1">3559</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Empty Password Reset Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">EmptyPasswordResetTest</td><td><a href="#m11">ItShouldNotBePossibleToResetUserPasswordWithoutProvidingUsername</a></td><td rowspan="1">1632414945444</td><td rowspan="1">3645</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Invalid Credentials Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">InvalidCredentialsTest</td><td><a href="#m12">itShouldNotBePossibleToLogInWithAnInvalidUsername</a></td><td rowspan="1">1632414954220</td><td rowspan="1">3919</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">Retry Listener Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNGRetryTest</td><td><a href="#m13">LogIn</a></td><td rowspan="1">1632414963964</td><td rowspan="1">3836</td></tr></tbody>
+<tbody id="t6"><tr><th colspan="4">Valid Password Reset Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ValidPasswordResetTest</td><td><a href="#m14">ItShouldBePossibleToResetUserPassword</a></td><td rowspan="1">1632414972651</td><td rowspan="1">8426</td></tr></tbody>
+<tbody id="t7"><tr><th colspan="4">Window Handling Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">WindowHandlingTest</td><td><a href="#m15">ItShouldBePossibleToLaunchTheHelpWindow</a></td><td rowspan="1">1632414992735</td><td rowspan="1">3401</td></tr><tr class="passedeven"><td><a href="#m16">LogIn</a></td><td rowspan="1">1632414986630</td><td rowspan="1">6101</td></tr><tr class="passedeven"><td><a href="#m17">LogOut</a></td><td rowspan="1">1632414996141</td><td rowspan="1">1053</td></tr></tbody>
 </table>
 <h2>Personal Info Test</h2><h3 id="m0">PersonalInfoTest#ItShouldBePossibleToEditEmployeeInformation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">PersonalInfoTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">PersonalInfoTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Writing posts Test</h2><h3 id="m3">BuzzTest#WriteAPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+<h2>Writing posts Test</h2><h3 id="m3">BuzzTest#itShouldBePossibleToWriteAPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false],
 	Incorrect welcome message expected [true] but found [false]
-	at BuzzTest.WriteAPost(BuzzTest.java:36)
+	at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">BuzzTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">BuzzTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">BuzzTest#LogOut</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/index.php/auth/logout&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;L0427&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 128, moz:profile: C:\Users\dziekonskit\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8f44f8a-9c33-451b-9952-20002ac96a5d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at BuzzTest.LogOut(BuzzTest.java:44)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">BuzzTest#itShouldBePossibleToWriteAPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false]
+	at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">BuzzTest#itShouldBePossibleToWriteAPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false]
+	at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">BuzzTest#itShouldBePossibleToWriteAPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Incorrect welcome message expected [true] but found [false]
+	at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">BuzzTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">BuzzTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Empty Credentials Test</h2><h3 id="m10">EmptyCredentialsTest#itShouldNotBePossibleToLogInWithEmptyUserCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Empty Password Reset Test</h2><h3 id="m11">EmptyPasswordResetTest#ItShouldNotBePossibleToResetUserPasswordWithoutProvidingUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Invalid Credentials Test</h2><h3 id="m12">InvalidCredentialsTest#itShouldNotBePossibleToLogInWithAnInvalidUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Retry Listener Test</h2><h3 id="m13">TestNGRetryTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Valid Password Reset Test</h2><h3 id="m14">ValidPasswordResetTest#ItShouldBePossibleToResetUserPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Window Handling Test</h2><h3 id="m15">WindowHandlingTest#ItShouldBePossibleToLaunchTheHelpWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">WindowHandlingTest#LogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">WindowHandlingTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

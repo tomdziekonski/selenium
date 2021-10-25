@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" retried="4" total="18" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeHRM Testing Suite" duration-ms="35706" started-at="2021-08-06T17:03:44 CEST" finished-at="2021-08-06T17:04:20 CEST">
+  <suite name="OrangeHRM Testing Suite" duration-ms="107425" started-at="2021-09-23T18:34:50 CEST" finished-at="2021-09-23T18:36:38 CEST">
     <groups>
     </groups>
-    <test name="Personal Info Test" duration-ms="21618" started-at="2021-08-06T17:03:44 CEST" finished-at="2021-08-06T17:04:05 CEST">
+    <test name="Personal Info Test" duration-ms="22275" started-at="2021-09-23T18:34:50 CEST" finished-at="2021-09-23T18:35:13 CEST">
       <class name="PersonalInfoTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:PersonalInfoTest@2ea227af]" name="beforeTest" is-config="true" duration-ms="6568" started-at="2021-08-06T17:03:44 CEST" finished-at="2021-08-06T17:03:50 CEST">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:PersonalInfoTest@5be6e01c]" name="beforeTestSetup" is-config="true" duration-ms="5718" started-at="2021-09-23T18:34:50 CEST" finished-at="2021-09-23T18:34:56 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LogIn()[pri:1, instance:PersonalInfoTest@2ea227af]" name="LogIn" duration-ms="4668" started-at="2021-08-06T17:03:50 CEST" description="User is logging in" finished-at="2021-08-06T17:03:55 CEST">
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:PersonalInfoTest@5be6e01c]" name="LogIn" duration-ms="5267" started-at="2021-09-23T18:34:56 CEST" description="User is logging in" finished-at="2021-09-23T18:35:01 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method status="PASS" signature="ItShouldBePossibleToEditEmployeeInformation()[pri:2, instance:PersonalInfoTest@2ea227af]" name="ItShouldBePossibleToEditEmployeeInformation" duration-ms="8450" started-at="2021-08-06T17:03:55 CEST" description="User is editing Personal Information" finished-at="2021-08-06T17:04:04 CEST">
+        <test-method status="PASS" signature="ItShouldBePossibleToEditEmployeeInformation()[pri:2, instance:PersonalInfoTest@5be6e01c]" name="ItShouldBePossibleToEditEmployeeInformation" duration-ms="9235" started-at="2021-09-23T18:35:01 CEST" description="User is editing Personal Information" finished-at="2021-09-23T18:35:11 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ItShouldBePossibleToEditEmployeeInformation -->
-        <test-method status="PASS" signature="LogOut()[pri:3, instance:PersonalInfoTest@2ea227af]" name="LogOut" duration-ms="929" started-at="2021-08-06T17:04:04 CEST" description="User is logging out" finished-at="2021-08-06T17:04:05 CEST">
+        <test-method status="PASS" signature="LogOut()[pri:3, instance:PersonalInfoTest@5be6e01c]" name="LogOut" duration-ms="1070" started-at="2021-09-23T18:35:11 CEST" description="User is logging out" finished-at="2021-09-23T18:35:12 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOut -->
-        <test-method status="PASS" signature="close()[pri:0, instance:PersonalInfoTest@2ea227af]" name="close" is-config="true" duration-ms="817" started-at="2021-08-06T17:04:05 CEST" finished-at="2021-08-06T17:04:05 CEST">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:PersonalInfoTest@5be6e01c]" name="closeTheBrowser" is-config="true" duration-ms="801" started-at="2021-09-23T18:35:12 CEST" finished-at="2021-09-23T18:35:13 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
+        </test-method> <!-- closeTheBrowser -->
       </class> <!-- PersonalInfoTest -->
     </test> <!-- Personal Info Test -->
-    <test name="Writing posts Test" duration-ms="14054" started-at="2021-08-06T17:04:06 CEST" finished-at="2021-08-06T17:04:20 CEST">
+    <test name="Writing posts Test" duration-ms="18184" started-at="2021-09-23T18:35:13 CEST" finished-at="2021-09-23T18:35:31 CEST">
       <class name="BuzzTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:BuzzTest@17046283]" name="beforeTest" is-config="true" duration-ms="5226" started-at="2021-08-06T17:04:06 CEST" finished-at="2021-08-06T17:04:11 CEST">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:BuzzTest@6a400542]" name="beforeTestSetup" is-config="true" duration-ms="4867" started-at="2021-09-23T18:35:13 CEST" finished-at="2021-09-23T18:35:18 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LogIn()[pri:1, instance:BuzzTest@17046283]" name="LogIn" duration-ms="4442" started-at="2021-08-06T17:04:11 CEST" description="User is logging in" finished-at="2021-08-06T17:04:15 CEST">
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:BuzzTest@6a400542]" name="LogIn" duration-ms="4854" started-at="2021-09-23T18:35:18 CEST" description="User is logging in" finished-at="2021-09-23T18:35:22 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method status="FAIL" signature="WriteAPost()[pri:2, instance:BuzzTest@17046283]" name="WriteAPost" duration-ms="2654" started-at="2021-08-06T17:04:15 CEST" description="User is writing a post" finished-at="2021-08-06T17:04:18 CEST">
+        <test-method status="SKIP" signature="itShouldBePossibleToWriteAPost()[pri:2, instance:BuzzTest@6a400542]" name="itShouldBePossibleToWriteAPost" duration-ms="2311" retried="true" started-at="2021-09-23T18:35:22 CEST" description="User is writing a post" finished-at="2021-09-23T18:35:25 CEST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -50,7 +50,7 @@ Incorrect welcome message expected [true] but found [false]]]>
 Incorrect welcome message expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at BuzzTest.WriteAPost(BuzzTest.java:36)
+at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,16 +88,346 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WriteAPost -->
-        <test-method status="PASS" signature="LogOut()[pri:3, instance:BuzzTest@17046283]" name="LogOut" duration-ms="792" started-at="2021-08-06T17:04:18 CEST" description="User is logging out" finished-at="2021-08-06T17:04:19 CEST">
+        </test-method> <!-- itShouldBePossibleToWriteAPost -->
+        <test-method status="SKIP" signature="itShouldBePossibleToWriteAPost()[pri:2, instance:BuzzTest@6a400542]" name="itShouldBePossibleToWriteAPost" duration-ms="845" retried="true" started-at="2021-09-23T18:35:25 CEST" description="User is writing a post" finished-at="2021-09-23T18:35:26 CEST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itShouldBePossibleToWriteAPost -->
+        <test-method status="SKIP" signature="itShouldBePossibleToWriteAPost()[pri:2, instance:BuzzTest@6a400542]" name="itShouldBePossibleToWriteAPost" duration-ms="775" retried="true" started-at="2021-09-23T18:35:26 CEST" description="User is writing a post" finished-at="2021-09-23T18:35:26 CEST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itShouldBePossibleToWriteAPost -->
+        <test-method status="FAIL" signature="itShouldBePossibleToWriteAPost()[pri:2, instance:BuzzTest@6a400542]" name="itShouldBePossibleToWriteAPost" duration-ms="700" started-at="2021-09-23T18:35:26 CEST" description="User is writing a post" finished-at="2021-09-23T18:35:27 CEST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false],
+Incorrect welcome message expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itShouldBePossibleToWriteAPost -->
+        <test-method status="SKIP" signature="LogOut()[pri:3, instance:BuzzTest@6a400542]" name="LogOut" duration-ms="1616" retried="true" started-at="2021-09-23T18:35:27 CEST" description="User is logging out" finished-at="2021-09-23T18:35:29 CEST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a href="/index.php/auth/logout"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L0427', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 128, moz:profile: C:\Users\dziekonskit\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8f44f8a-9c33-451b-9952-20002ac96a5d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="/index.php/auth/logout"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L0427', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 92.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210903235534, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 128, moz:profile: C:\Users\dziekonskit\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8f44f8a-9c33-451b-9952-20002ac96a5d
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at BuzzTest.LogOut(BuzzTest.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOut -->
-        <test-method status="PASS" signature="close()[pri:0, instance:BuzzTest@17046283]" name="close" is-config="true" duration-ms="743" started-at="2021-08-06T17:04:19 CEST" finished-at="2021-08-06T17:04:20 CEST">
+        <test-method status="PASS" signature="LogOut()[pri:3, instance:BuzzTest@6a400542]" name="LogOut" duration-ms="853" started-at="2021-09-23T18:35:29 CEST" description="User is logging out" finished-at="2021-09-23T18:35:30 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
+        </test-method> <!-- LogOut -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:BuzzTest@6a400542]" name="closeTheBrowser" is-config="true" duration-ms="1088" started-at="2021-09-23T18:35:30 CEST" finished-at="2021-09-23T18:35:31 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
       </class> <!-- BuzzTest -->
     </test> <!-- Writing posts Test -->
+    <test name="Empty Credentials Test" duration-ms="9162" started-at="2021-09-23T18:35:31 CEST" finished-at="2021-09-23T18:35:40 CEST">
+      <class name="EmptyCredentialsTest">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:EmptyCredentialsTest@c267ef4]" name="beforeTestSetup" is-config="true" duration-ms="4918" started-at="2021-09-23T18:35:31 CEST" finished-at="2021-09-23T18:35:36 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="itShouldNotBePossibleToLogInWithEmptyUserCredentials()[pri:1, instance:EmptyCredentialsTest@c267ef4]" name="itShouldNotBePossibleToLogInWithEmptyUserCredentials" duration-ms="3559" started-at="2021-09-23T18:35:36 CEST" description="User is logging in" finished-at="2021-09-23T18:35:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itShouldNotBePossibleToLogInWithEmptyUserCredentials -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:EmptyCredentialsTest@c267ef4]" name="closeTheBrowser" is-config="true" duration-ms="680" started-at="2021-09-23T18:35:39 CEST" finished-at="2021-09-23T18:35:40 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- EmptyCredentialsTest -->
+    </test> <!-- Empty Credentials Test -->
+    <test name="Empty Password Reset Test" duration-ms="9429" started-at="2021-09-23T18:35:40 CEST" finished-at="2021-09-23T18:35:49 CEST">
+      <class name="EmptyPasswordResetTest">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:EmptyPasswordResetTest@3f197a46]" name="beforeTestSetup" is-config="true" duration-ms="4885" started-at="2021-09-23T18:35:40 CEST" finished-at="2021-09-23T18:35:45 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="ItShouldNotBePossibleToResetUserPasswordWithoutProvidingUsername()[pri:1, instance:EmptyPasswordResetTest@3f197a46]" name="ItShouldNotBePossibleToResetUserPasswordWithoutProvidingUsername" duration-ms="3645" started-at="2021-09-23T18:35:45 CEST" description="User is navigating to the Password Reset page" finished-at="2021-09-23T18:35:49 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItShouldNotBePossibleToResetUserPasswordWithoutProvidingUsername -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:EmptyPasswordResetTest@3f197a46]" name="closeTheBrowser" is-config="true" duration-ms="895" started-at="2021-09-23T18:35:49 CEST" finished-at="2021-09-23T18:35:49 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- EmptyPasswordResetTest -->
+    </test> <!-- Empty Password Reset Test -->
+    <test name="Invalid Credentials Test" duration-ms="9114" started-at="2021-09-23T18:35:49 CEST" finished-at="2021-09-23T18:35:59 CEST">
+      <class name="InvalidCredentialsTest">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:InvalidCredentialsTest@1aa7ecca]" name="beforeTestSetup" is-config="true" duration-ms="4219" started-at="2021-09-23T18:35:50 CEST" finished-at="2021-09-23T18:35:54 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="itShouldNotBePossibleToLogInWithAnInvalidUsername()[pri:1, instance:InvalidCredentialsTest@1aa7ecca]" name="itShouldNotBePossibleToLogInWithAnInvalidUsername" duration-ms="3919" started-at="2021-09-23T18:35:54 CEST" description="User is logging in" finished-at="2021-09-23T18:35:58 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itShouldNotBePossibleToLogInWithAnInvalidUsername -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:InvalidCredentialsTest@1aa7ecca]" name="closeTheBrowser" is-config="true" duration-ms="967" started-at="2021-09-23T18:35:58 CEST" finished-at="2021-09-23T18:35:59 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- InvalidCredentialsTest -->
+    </test> <!-- Invalid Credentials Test -->
+    <test name="Retry Listener Test" duration-ms="8685" started-at="2021-09-23T18:35:59 CEST" finished-at="2021-09-23T18:36:07 CEST">
+      <class name="TestNGRetryTest">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:TestNGRetryTest@6572421]" name="beforeTestSetup" is-config="true" duration-ms="4840" started-at="2021-09-23T18:35:59 CEST" finished-at="2021-09-23T18:36:03 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:TestNGRetryTest@6572421]" name="LogIn" duration-ms="3836" started-at="2021-09-23T18:36:03 CEST" description="User is logging in" finished-at="2021-09-23T18:36:07 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+      </class> <!-- TestNGRetryTest -->
+    </test> <!-- Retry Listener Test -->
+    <test name="Valid Password Reset Test" duration-ms="13952" started-at="2021-09-23T18:36:07 CEST" finished-at="2021-09-23T18:36:21 CEST">
+      <class name="ValidPasswordResetTest">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:ValidPasswordResetTest@37afeb11]" name="beforeTestSetup" is-config="true" duration-ms="4813" started-at="2021-09-23T18:36:07 CEST" finished-at="2021-09-23T18:36:12 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="ItShouldBePossibleToResetUserPassword()[pri:1, instance:ValidPasswordResetTest@37afeb11]" name="ItShouldBePossibleToResetUserPassword" duration-ms="8426" started-at="2021-09-23T18:36:12 CEST" description="User is navigating to the Password Reset page" finished-at="2021-09-23T18:36:21 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItShouldBePossibleToResetUserPassword -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:ValidPasswordResetTest@37afeb11]" name="closeTheBrowser" is-config="true" duration-ms="707" started-at="2021-09-23T18:36:21 CEST" finished-at="2021-09-23T18:36:21 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- ValidPasswordResetTest -->
+    </test> <!-- Valid Password Reset Test -->
+    <test name="Window Handling Test" duration-ms="16463" started-at="2021-09-23T18:36:21 CEST" finished-at="2021-09-23T18:36:38 CEST">
+      <class name="WindowHandlingTest">
+        <test-method status="PASS" signature="beforeTestSetup()[pri:0, instance:WindowHandlingTest@222545dc]" name="beforeTestSetup" is-config="true" duration-ms="4835" started-at="2021-09-23T18:36:21 CEST" finished-at="2021-09-23T18:36:26 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method status="PASS" signature="LogIn()[pri:1, instance:WindowHandlingTest@222545dc]" name="LogIn" duration-ms="6101" started-at="2021-09-23T18:36:26 CEST" description="User is logging in" finished-at="2021-09-23T18:36:32 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogIn -->
+        <test-method status="PASS" signature="ItShouldBePossibleToLaunchTheHelpWindow()[pri:2, instance:WindowHandlingTest@222545dc]" name="ItShouldBePossibleToLaunchTheHelpWindow" duration-ms="3401" started-at="2021-09-23T18:36:32 CEST" description="User is clicking on the Help button" finished-at="2021-09-23T18:36:36 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItShouldBePossibleToLaunchTheHelpWindow -->
+        <test-method status="PASS" signature="LogOut()[pri:3, instance:WindowHandlingTest@222545dc]" name="LogOut" duration-ms="1053" started-at="2021-09-23T18:36:36 CEST" description="User is logging out" finished-at="2021-09-23T18:36:37 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:WindowHandlingTest@222545dc]" name="closeTheBrowser" is-config="true" duration-ms="1058" started-at="2021-09-23T18:36:37 CEST" finished-at="2021-09-23T18:36:38 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- WindowHandlingTest -->
+    </test> <!-- Window Handling Test -->
   </suite> <!-- OrangeHRM Testing Suite -->
 </testng-results>

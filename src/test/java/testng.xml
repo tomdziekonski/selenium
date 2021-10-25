@@ -4,6 +4,8 @@
 <suite name = "OrangeHRM Testing Suite">
 <listeners>
    <listener class-name="Utils.AllureListener"></listener>
+   <listener class-name="Utils.RetryFailedTestsLogic"></listener>
+
 </listeners>
 
 
@@ -18,5 +20,52 @@
          <class name = "BuzzTest" />
       </classes>
    </test>
+
+   <test name = "Empty Credentials Test">
+      <classes>
+         <class name = "EmptyCredentialsTest" />
+      </classes>
+   </test>
+
+   <test name = "Empty Password Reset Test">
+      <classes>
+         <class name = "EmptyPasswordResetTest" />
+      </classes>
+   </test>
+
+   <test name = "Invalid Credentials Test">
+      <classes>
+         <class name = "InvalidCredentialsTest" />
+      </classes>
+   </test>
+
+   <test name = "Retry Listener Test">
+      <classes>
+         <class name = "TestNGRetryTest" />
+      </classes>
+   </test>
+
+   <test name = "Valid Password Reset Test">
+      <classes>
+         <class name = "ValidPasswordResetTest" />
+      </classes>
+   </test>
+
+   <test name = "Window Handling Test">
+      <classes>
+         <class name = "WindowHandlingTest" />
+      </classes>
+   </test>
+
+
+
+
+
+
+
+
+
+
+
 </suite>
 

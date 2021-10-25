@@ -1,2 +1,8 @@
-PersonalInfoTest.class
 BuzzTest.class
+ValidPasswordResetTest.class
+InvalidCredentialsTest.class
+EmptyPasswordResetTest.class
+WindowHandlingTest.class
+EmptyCredentialsTest.class
+PersonalInfoTest.class
+TestNGRetryTest.class

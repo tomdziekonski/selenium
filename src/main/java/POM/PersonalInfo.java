@@ -1,6 +1,7 @@
 package POM;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -18,7 +19,15 @@ public class PersonalInfo {
     private By Nationality = (By.id("personal_cmbNation"));
     private By Image = (By.id("empPic"));
     private By InputFile = (By.id("photofile"));
-
+    private By ContactDetails = (By.xpath("//a[contains(text(), 'Contact Details')]"));
+    private By ContactAddress = (By.id("contact_street1"));
+    private By ContactCity = (By.id("contact_city"));
+    private By ContactState = (By.id("contact_province"));
+    private By ContactPostalCode = (By.id("contact_emp_zipcode"));
+    private By ContactTelephone = (By.id("contact_emp_hm_telephone"));
+    private By ContactMobile = (By.id("contact_emp_mobile"));
+    private By ContactWorkPhone = (By.id("contact_emp_work_telephone"));
+    private By ContactEmail = (By.id("contact_emp_work_email"));
 
     private Select select;
     private WebElement element;
@@ -32,20 +41,6 @@ public class PersonalInfo {
         return driver.findElement(EnableDisablePersonalInfoEditing);
     }
 
-    public WebElement FirstName() {
-
-        driver.findElement(firstName).clear();
-        element = driver.findElement(firstName);
-        return element;
-    }
-
-    public WebElement LastName() {
-        driver.findElement(LastName).clear();
-        element = driver.findElement(LastName);
-
-        return element;
-    }
-/////////////////////////////////////////////
     public WebElement clearTextField(By elementId) {
         driver.findElement(elementId).clear();
         element = driver.findElement(elementId);
@@ -79,49 +74,29 @@ public class PersonalInfo {
         findWebElement(InputFile).sendKeys(avatarFileDirectory);
         clickWebElement(EnableDisablePersonalInfoEditing);
     }
-////////////////////////////////////////////////////
 
-
-    public WebElement EmployeeID() {
-        return driver.findElement(EmployeeID);
+    public void OpenContactInfo(){
+        clickWebElement(ContactDetails);
     }
 
-    public WebElement MaleGender() {
-        return driver.findElement(MaleGender);
+    public void EditContactInfo(String address, String city, String state, String code, String phone, String mobile, String work, String mail){
+        clickWebElement(EnableDisablePersonalInfoEditing);
+        clearTextField(ContactAddress);
+        clickWebElement(ContactAddress).sendKeys(address);
+        clearTextField(ContactCity);
+        clickWebElement(ContactCity).sendKeys(city);
+        clearTextField(ContactState);
+        clickWebElement(ContactState).sendKeys(state);
+        clearTextField(ContactPostalCode);
+        clickWebElement(ContactPostalCode).sendKeys(code);
+        clearTextField(ContactTelephone);
+        clickWebElement(ContactTelephone).sendKeys(phone);
+        clearTextField(ContactMobile);
+        clickWebElement(ContactMobile).sendKeys(mobile);
+        clearTextField(ContactWorkPhone);
+        clickWebElement(ContactWorkPhone).sendKeys(work);
+        clearTextField(ContactEmail);
+        clickWebElement(ContactEmail).sendKeys(mail);
+        clickWebElement(EnableDisablePersonalInfoEditing);
     }
-
-    public WebElement FemaleGender() {
-        return driver.findElement(FemaleGender);
-    }
-
-    public WebElement Date() {
-        return driver.findElement(Date);
-    }
-
-    public WebElement Flag() {
-        return driver.findElement(Flag);
-    }
-
-    public WebElement Nationality() {
-        return driver.findElement(Nationality);
-    }
-
-    public WebElement SetAvatar() {
-        return driver.findElement(InputFile);
-    }
-
-    public Select SetNationality() {
-        select = new Select(driver.findElement(Nationality));
-        return select;
-    }
-
-    public WebElement Pic() {
-        return driver.findElement(Image);
-    }
-
-
-    public WebElement getEnableDisablePersonalInfoEditing() {
-
-        return driver.findElement(EnableDisablePersonalInfoEditing);
-    }
-}
+   }

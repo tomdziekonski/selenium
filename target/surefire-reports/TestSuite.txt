@@ -1,10 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.035 s <<< FAILURE! - in TestSuite
-BuzzTest.WriteAPost  Time elapsed: 2.847 s  <<< FAILURE!
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 108.806 s <<< FAILURE! - in TestSuite
+BuzzTest.itShouldBePossibleToWriteAPost  Time elapsed: 0.936 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false],
+	Incorrect welcome message expected [true] but found [false],
 	Incorrect welcome message expected [true] but found [false]
-	at BuzzTest.WriteAPost(BuzzTest.java:36)
+	at BuzzTest.itShouldBePossibleToWriteAPost(BuzzTest.java:36)
 
